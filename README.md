@@ -77,4 +77,4 @@ All commands are executed for host=localhost and port=3000.
 
     ```node tools/client --host <host> --port <port>> --msg <msg>```
     
-    This command will send request to http://<host>:<port>/hello/<msg>
+    This command will send request to http://<<host>>:<<port>>/hello/<<msg>>
