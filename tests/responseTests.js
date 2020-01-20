@@ -53,7 +53,7 @@ describe('response', () => {
 
 
     describe('sendSuccessResponse', () => {
-        it('should set internal error status when error is not http error', () => {
+        it('should ok status', () => {
             let expectedStatusCode = 200;
             let response = createResponse();
 
