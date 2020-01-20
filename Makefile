@@ -1,8 +1,8 @@
 main:
-	npm install
+	gulp --port 3000
 
-run:
-	gulp run --port 3000
+install:
+	npm install
 
 api_tests:
 	gulp tests:api --host localhost --port 3000
