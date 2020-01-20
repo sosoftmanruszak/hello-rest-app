@@ -53,6 +53,7 @@ Commands above are executed for host=localhost on port=3000.
 * Testing hello endpoint for local service
     
     ``` make hello_test_positive```
+    
     ``` make hello_test_negative```
 
 
