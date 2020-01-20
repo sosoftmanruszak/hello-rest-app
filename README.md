@@ -15,6 +15,7 @@ NOTE: Package gulp-cli will be installed globally. To uninstall it run `make uni
 ## Getting Started
 
 Example service and tools usage is presented in Makefile directory.
+
 The easiest way of running application on default port is command:
 
 ```
@@ -22,14 +23,16 @@ make
 ```
 
 This command will run linter, unit tests and service on port 3000.
+
 While service is running you can:
 
 * execute api tests by command: ```make api_tests```
 * call hello endpoint with positive scenario: ```make hello_test_positive```
 * call hello endpoint with negative scenario: ```make hello_test_negative```
 
-Hello endpoint in example above is called using tools/client.js script from this repo.
-All commands are executed for host=localhost and port=3000.
+Hello endpoint in example above is called using tools/client.js script from this repository.
+
+Commands above are executed for host=localhost on port=3000.
 
 ## Available commands
 
@@ -75,4 +78,4 @@ All commands are executed for host=localhost and port=3000.
 
     ```node tools/client --host <host> --port <port> --msg <msg>```
     
-    This command will send request to http://host:port/hello/msg
+    This command will send request to http://< host >:< port >/hello/< msg >
