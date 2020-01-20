@@ -14,7 +14,7 @@ function createResponse() {
 }
 
 describe('response', () => {
-    describe('createResponse', () => {
+    describe('sendErrorResponse', () => {
         it('should set internal error status when error is not http error', () => {
             let error = new Error();
             let response = createResponse();
