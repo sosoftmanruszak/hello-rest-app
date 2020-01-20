@@ -8,7 +8,9 @@ Source code contains also tools supporting application build and testing (gulp, 
 
 Before running application you have to:
  * install node LTS version 12.14.1.
- * install node modules. You can do this by running `make install` command in project's main directory.
+ * install node modules and gulp-cli. You can do this by running `make install` command in project's main directory.
+  
+NOTE: Package gulp-cli will be installed globally. To uninstall it run `make uninstall`
 
 ## Getting Started
 
@@ -57,10 +59,6 @@ All commands are executed for host=localhost and port=3000.
 
     ```gulp run --port <port>```
 
-* running api tests
-
-    ```gulp run --host <host> --port <port>```
-
 * running eslint
 
     ```gulp eslint```
@@ -69,9 +67,9 @@ All commands are executed for host=localhost and port=3000.
 
     ```gulp tests:unit```
 
-* running API tests
+* running api tests
 
-    ```gulp tests:api```
+    ```gulp tests:api --host <host> --port <port>```
 
 * running test client that calls hello endpoint
 

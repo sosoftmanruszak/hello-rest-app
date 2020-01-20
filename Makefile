@@ -3,6 +3,10 @@ main:
 
 install:
 	npm install
+	npm install --global gulp-cli
+
+uninstall:
+	npm uninstall --global gulp-cli
 
 api_tests:
 	gulp tests:api --host localhost --port 3000
