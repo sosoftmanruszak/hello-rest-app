@@ -26,7 +26,7 @@ describe('response', () => {
             assert(response.status.calledWith(INTERNAL_SERVER_ERROR));
         });
 
-        it('should set response status as expected when error is http error', () => {
+        it('should set response status as expected when error is bad request error', () => {
             let expectedStatusCode = BAD_REQUEST;
             let error = new BadRequestError();
             let response = createResponse();
@@ -38,7 +38,7 @@ describe('response', () => {
             assert(response.status.calledWith(expectedStatusCode));
         });
 
-        it('should send body when error is http error', () => {
+        it('should set response status as expected when error is http error', () => {
             let expectedStatusCode = UNAUTHORIZED;
             let error = new HttpError(expectedStatusCode, 'error message');
             let response = createResponse();
